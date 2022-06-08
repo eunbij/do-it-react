@@ -6,7 +6,7 @@ class Input extends PureComponent {
   constructor(props) {
     super(props);
     this.setRef = this.setRef.bind(this);
-    this.handleChange = this.handleChange.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
   }
   handleChage(e) {
     const { name, onChange } = this.props;

@@ -22,10 +22,10 @@ export default class ScrollSpy extends React.PureComponent {
     }
     componentDidMount() {
         this.checkPosition();
+        window.removeEventListener('scroll', this.checkPosition);
     }
     componentWillUnmount() {
         // 4. 컴포넌트가 소멸할 때 화면 스크롤 감시 함수를 메모리에서 제거
-        window.removeEventListener('scroll', this.checkPosition);
     }
     render() {
         return (
